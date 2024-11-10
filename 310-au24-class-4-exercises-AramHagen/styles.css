@@ -1,0 +1,48 @@
+body {
+  margin: 100px;
+}
+button {
+  line-height: 48px;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#showHands {
+  color: blueviolet;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+#player-hand {
+  color: #0458b6;
+}
+#dealer-hand {
+  color: #80940d;
+}
+#start-button {
+  width: 250px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #0a7c1d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.grid-box{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-items: space-between; 
+  gap: 10%; 
+}
+.background-blue{
+background-color: #1668C3;
+}
+.background-red{
+  background-color: #BA0909;
+}
