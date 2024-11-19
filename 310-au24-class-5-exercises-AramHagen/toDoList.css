@@ -1,0 +1,135 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #e8f2f6;
+}
+main {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px 0 20px;
+  i {
+    color: darkred;
+  }
+}
+.delete i {
+  color: darkred;
+  font-size: 20px;
+}
+main,
+input {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h2,
+h1 {
+  margin-bottom: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  cursor: move;
+  border-radius: 5px;
+  padding: 10px 13px;
+  margin-bottom: 11px;
+  border: 1px solid #ccc;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: azure;
+}
+.item {
+  transition: all 0.4s ease; /* Apply height and opacity transitions */
+}
+.item.removing {
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+.item.dragging {
+  opacity: 0.6;
+}
+
+a {
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  color: white;
+}
+
+li.done span {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.add-item {
+  background-color: #3a7620;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 20px;
+  }
+}
+
+.error-message {
+  color: #ba0909;
+  display: none;
+}
+.show {
+  display: block;
+}
+.add {
+  display: grid;
+  grid-template-columns: 2fr 50px;
+  column-gap: 10px;
+  cursor: pointer;
+}
+#todo-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-indent: 13px;
+  height: 35px;
+}
+input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+#error {
+  margin-left: 13px;
+  font-size: 12px;
+  padding-top: 10px;
+}
+#removeAll {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
